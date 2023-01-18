@@ -1,0 +1,3 @@
+[submodule "charts/temporal-standalone"]
+	path = charts/temporal-standalone
+	url = https://github.com/temporalio/helm-charts
