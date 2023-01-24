@@ -21,7 +21,8 @@
   },
   "helm-values": {
     "enabled": true,
-    "pinDigests": true
+    "pinDigests": true,
+    "bumpVersion": "patch"
   },
   "helmv3": {
     "enabled": true,
