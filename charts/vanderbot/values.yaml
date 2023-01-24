@@ -39,3 +39,15 @@ probes:
       httpGet:
         path: /welcome.txt
         port: http
+
+service:
+  main:
+    enabled: false
+    primary: true
+    type: NodePort
+    ports:
+      http:
+        port: 80
+      https:
+        enabled: true
+        port: 443
