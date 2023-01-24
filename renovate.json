@@ -18,5 +18,13 @@
    ],
   "git-submodules": {
     "enabled": true
+  },
+  "helm-values": {
+    "enabled": true,
+    "pinDigests": true
+  },
+  "helmv3": {
+    "enabled": true,
+    "bumpVersion": "patch"
   }
 }
