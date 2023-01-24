@@ -13,7 +13,7 @@ image:
   # -- image repository
   repository: ghcr.io/ajvpot/vanderbot/vanderbot
   # -- image tag
-  tag: latest@sha256:6a6750d78b7ac8f7f7fc28a2f73ea2408e959fd8a5ed15cb21f2dff47a44a90a
+  tag: latest@sha256:56c71e87463008f5b77a54652198943c851fb0d01148abf7c0271a712bcb9838
   # -- image pull policy
   pullPolicy: Always
 
