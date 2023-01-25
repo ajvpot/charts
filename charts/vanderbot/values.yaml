@@ -38,21 +38,21 @@ probes:
     spec:
       httpGet:
         path: /healthz
-        port: system
+        port: 8392
   liveness:
     enabled: true
     custom: true
     spec:
       httpGet:
         path: /healthz
-        port: system
+        port: 8392
   startup:
     enabled: true
     custom: true
     spec:
       httpGet:
         path: /healthz
-        port: system
+        port: 8392
 
 
 service:
