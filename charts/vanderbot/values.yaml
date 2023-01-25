@@ -11,9 +11,9 @@ controller:
 
 image:
   # -- image repository
-  repository: ghcr.io/ajvpot/vanderbot/vanderbot
+  repository: ghcr.io/ajvpot/vanderbot/vanderbot-2946d9cdf8c6625ee0d8369a54877e5f
   # -- image tag
-  tag: latest@sha256:6a6750d78b7ac8f7f7fc28a2f73ea2408e959fd8a5ed15cb21f2dff47a44a90a
+  tag: latest@sha256:a7a653c0a3c8fd1ff17bf740513f9c80d8ba93420022847ebc07b1728ee21eae
   # -- image pull policy
   pullPolicy: Always
 
