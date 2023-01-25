@@ -63,6 +63,7 @@ service:
     ports:
       http:
         enabled: true
+        primary: false
         port: 80
       system:
         enabled: true
