@@ -67,4 +67,5 @@ service:
         port: 80
       system:
         enabled: true
+        primary: true
         port: 8392
