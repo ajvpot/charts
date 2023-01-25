@@ -46,6 +46,9 @@ service:
     primary: true
     type: ClusterIP
     ports:
+      http:
+        enabled: true
+        port: 80
       system:
         enabled: true
         port: 8392
