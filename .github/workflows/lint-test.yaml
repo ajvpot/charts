@@ -27,6 +27,15 @@ jobs:
         uses: helm/chart-testing-action@v2.3.1
         with:
           version: v3.5.1
+      - name: Set up chart-testing fork
+        run: |-
+          cd /tmp
+          mkdir -p $HOME/ctbin
+          wget https://github.com/ajvpot/chart-testing/releases/download/3.7.1-2/chart-testing_3.7.1-2_linux_amd64.tar.gz -O ct.tar.gz 
+          tar -xzf ct.tar.gz -C "$HOME/ctbin"
+          
+          echo 'Adding ct directory to PATH...'
+          echo "$HOME/ctbin" >> "$GITHUB_PATH"
 
       - name: Run chart-testing (list-changed)
         id: list-changed
@@ -44,4 +53,4 @@ jobs:
         if: steps.list-changed.outputs.changed == 'true'
 
       - name: Run chart-testing (install)
-        run: ct install --config ct.yaml
+        run: ct install --config ct.yaml --execute-version-bump
