@@ -39,6 +39,21 @@ probes:
       httpGet:
         path: /healthz
         port: system
+  liveness:
+    enabled: true
+    custom: true
+    spec:
+      httpGet:
+        path: /healthz
+        port: system
+  startup:
+    enabled: true
+    custom: true
+    spec:
+      httpGet:
+        path: /healthz
+        port: system
+
 
 service:
   main:
