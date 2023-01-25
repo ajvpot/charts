@@ -33,21 +33,19 @@ ingress:
 # @default -- See values.yaml
 probes:
   readiness:
-    #enabled: true
-    #custom: true
+    enabled: true
+    custom: true
     spec:
       httpGet:
-        path: /welcome.txt
-        port: http
+        path: /healthz
+        port: system
 
 service:
   main:
-    enabled: false
+    enabled: true
     primary: true
-    type: NodePort
+    type: ClusterIP
     ports:
-      http:
-        port: 80
-      https:
+      system:
         enabled: true
-        port: 443
+        port: 8392
