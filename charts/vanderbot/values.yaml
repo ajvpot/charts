@@ -33,27 +33,11 @@ ingress:
 # @default -- See values.yaml
 probes:
   readiness:
-    enabled: true
-    custom: true
-    spec:
-      httpGet:
-        path: /healthz
-        port: 8392
+    enabled: false
   liveness:
-    enabled: true
-    custom: true
-    spec:
-      httpGet:
-        path: /healthz
-        port: 8392
+    enabled: false
   startup:
-    enabled: true
-    custom: true
-    spec:
-      httpGet:
-        path: /healthz
-        port: 8392
-
+    enabled: false
 
 service:
   main:
