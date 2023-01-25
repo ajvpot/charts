@@ -3,10 +3,10 @@ apiVersion: v2
 appVersion: 0.0.1
 description: A simple null file http and https server
 name: vanderbot
-version: 0.1.0
+version: 0.1.2
 kubeVersion: ">=1.16.0-0"
 home: https://github.com/ajvpot/charts
 dependencies:
   - name: common
-    repository: https://bjw-s.github.io/helm-charts
-    version: 1.2.1
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
