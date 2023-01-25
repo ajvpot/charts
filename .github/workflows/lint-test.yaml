@@ -47,7 +47,7 @@ jobs:
 
       - name: Run chart-testing (lint)
         run: |
-          $HOME/ctbin/ct lint --config ct.yaml --execute-version-bump --validate-maintainers=false
+          $HOME/ctbin/ct lint --config ct.yaml --execute-version-increment --validate-maintainers=false
           git commit -am "version bump" || true
           git push || true
 
