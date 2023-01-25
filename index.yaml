@@ -43,6 +43,21 @@ entries:
   vanderbot:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2023-01-25T06:46:43.87754666Z"
+    dependencies:
+    - name: common
+      repository: https://bjw-s.github.io/helm-charts
+      version: 1.2.1
+    description: A simple null file http and https server
+    digest: a5142320973f2d6ccc23aab4b4bc173102fc94910cfde5e02408265d619a9e2c
+    home: https://github.com/ajvpot/charts
+    kubeVersion: '>=1.16.0-0'
+    name: vanderbot
+    urls:
+    - https://github.com/ajvpot/charts/releases/download/vanderbot-0.1.0/vanderbot-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2023-01-25T06:45:46.120762268Z"
     dependencies:
     - name: common
@@ -206,4 +221,4 @@ entries:
     urls:
     - https://github.com/ajvpot/charts/releases/download/vanderbot-0.0.1/vanderbot-0.0.1.tgz
     version: 0.0.1
-generated: "2023-01-25T06:45:46.120801867Z"
+generated: "2023-01-25T06:46:43.877596462Z"
