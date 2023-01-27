@@ -43,6 +43,24 @@ entries:
   vanderbot:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2023-01-27T01:40:53.602238781Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: A simple null file http and https server
+    digest: c2465b70e404e0b33ae71c8443cea112dc9e40b70c573a2feb4a52f9617d410b
+    home: https://github.com/ajvpot/charts
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: Alex Vanderpot
+      url: https://vanderpot.com/
+    name: vanderbot
+    urls:
+    - https://github.com/ajvpot/charts/releases/download/vanderbot-0.1.7/vanderbot-0.1.7.tgz
+    version: 0.1.7
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2023-01-27T01:29:36.36134713Z"
     dependencies:
     - name: common
@@ -305,4 +323,4 @@ entries:
     urls:
     - https://github.com/ajvpot/charts/releases/download/vanderbot-0.0.1/vanderbot-0.0.1.tgz
     version: 0.0.1
-generated: "2023-01-27T01:29:36.361720221Z"
+generated: "2023-01-27T01:40:53.602629381Z"
