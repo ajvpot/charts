@@ -28,6 +28,7 @@ jobs:
         with:
           version: v3.5.1
       - name: Set up chart-testing fork
+        if: ${{ false }}
         run: |-
           cd /tmp
           mkdir -p $HOME/ctbin
@@ -47,7 +48,7 @@ jobs:
 
       - name: Run chart-testing (lint)
         run: |
-          $HOME/ctbin/ct lint --config ct.yaml --execute-version-increment --validate-maintainers=false
+          ct lint --config ct.yaml --execute-version-increment --validate-maintainers=false
           git commit -am "version bump" || true
           git push || true
 
