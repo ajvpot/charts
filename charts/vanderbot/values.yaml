@@ -62,11 +62,7 @@ postgresql:
   # -- By default uses an internal postgres. Disable if you use your own Postgres.
   enabled: true
   auth:
-    # -- Postgres database user name
-    username: postgres
-    # -- Postgres database password
-    password: postgres
-    # -- Postgres database
+    postgresPassword: postgres
     database: vanderbot
   persistence:
     # -- if database is stored to a PVC. Set to true when you are done testing.
