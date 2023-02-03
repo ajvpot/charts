@@ -43,6 +43,29 @@ entries:
   vanderbot:
   - apiVersion: v2
     appVersion: 0.0.1
+    created: "2023-02-03T20:25:11.987881142Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.14
+    description: Discord utility bot for website analysis, multitrack recording, multitrack
+      local audio output, and more. Add command modules with go.uber.org/fx.
+    digest: 530441cde26f6f8b9a5f4b50a358a81b1abde0e5433bab751f843e52d004edc1
+    home: https://github.com/ajvpot/charts
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: Alex Vanderpot
+      url: https://vanderpot.com/
+    name: vanderbot
+    urls:
+    - https://github.com/ajvpot/charts/releases/download/vanderbot-0.2.7/vanderbot-0.2.7.tgz
+    version: 0.2.7
+  - apiVersion: v2
+    appVersion: 0.0.1
     created: "2023-02-03T20:20:35.142312561Z"
     dependencies:
     - name: common
@@ -499,4 +522,4 @@ entries:
     urls:
     - https://github.com/ajvpot/charts/releases/download/vanderbot-0.0.1/vanderbot-0.0.1.tgz
     version: 0.0.1
-generated: "2023-02-03T20:20:35.142540664Z"
+generated: "2023-02-03T20:25:11.988133663Z"
