@@ -16,7 +16,7 @@ image:
   # -- image tag
   tag: latest@sha256:31de3450e3b61a6380526743ab7e84c8e677f46b3e086e45d94b7d499da68d02
   # -- image pull policy
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 # -- environment variables. See more environment variables in the [nullserv documentation](https://github.com/bmrzycki/nullserv/blob/master/README.md).
 # @default -- See below
