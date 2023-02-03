@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: 0.0.1
-description: A simple null file http and https server
+description: Discord utility bot for website analysis, multitrack recording, multitrack local audio output, and more. Add command modules with go.uber.org/fx.
 name: vanderbot
 version: 0.2.2
 kubeVersion: ">=1.16.0-0"
