@@ -23,6 +23,7 @@ env:
   # -- Set the container timezone
   TZ: UTC
   DATABASE_URL: "postgres://postgres:postgres@{{ printf \"%s-postgresql\" .Release.Name }}:5432/vanderbot?sslmode=disable"
+  RUNTIME_ENVIRONMENT: production
 
 ingress:
   # -- Enable and configure ingress settings for the chart under this key.
