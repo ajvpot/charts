@@ -3,6 +3,45 @@ entries:
   temporal:
   - apiVersion: v2
     appVersion: 1.20.2
+    created: "2023-04-26T04:53:36.097257906Z"
+    dependencies:
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: https://charts.helm.sh/incubator
+      version: 0.14.3
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 15.1.3
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.17.3
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 5.0.10
+    description: Temporal is a distributed, scalable, durable, and highly available
+      orchestration engine to execute asynchronous long-running business logic in
+      a scalable and resilient way.
+    digest: 5801a35adc9f5ec21e5d0e96a6c5400471b3536a4d60bd7906c695e4c8765c89
+    home: https://temporal.io/
+    keywords:
+    - temporal
+    - workflow
+    - orchestration
+    maintainers:
+    - name: Temporal Technologies Inc.
+      url: https://temporal.io/
+    name: temporal
+    sources:
+    - https://github.com/temporalio/temporal
+    type: application
+    urls:
+    - https://github.com/ajvpot/charts/releases/download/temporal-0.22.0/temporal-0.22.0.tgz
+    version: 0.22.0
+  - apiVersion: v2
+    appVersion: 1.20.2
     created: "2023-04-20T23:57:18.147349564Z"
     dependencies:
     - condition: cassandra.enabled
@@ -823,4 +862,4 @@ entries:
     urls:
     - https://github.com/ajvpot/charts/releases/download/vanderbot-0.0.1/vanderbot-0.0.1.tgz
     version: 0.0.1
-generated: "2023-04-20T23:57:18.147457865Z"
+generated: "2023-04-26T04:53:36.097344408Z"
