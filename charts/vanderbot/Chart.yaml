@@ -3,7 +3,7 @@ apiVersion: v2
 appVersion: 0.0.1
 description: Discord utility bot for website analysis, multitrack recording, multitrack local audio output, and more. Add command modules with go.uber.org/fx.
 name: vanderbot
-version: 0.2.15
+version: 0.2.16
 kubeVersion: ">=1.16.0-0"
 home: https://github.com/ajvpot/charts
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     repository: https://library-charts.k8s-at-home.com
     version: 4.5.2
   - name: postgresql
-    version: 12.1.14
+    version: 15.5.38
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
 maintainers:
